@@ -1,8 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig, externalizeDepsPlugin } from 'electron-vite'
 import vue from '@vitejs/plugin-vue'
-import monacoEditorPluginModule from 'vite-plugin-monaco-editor'
-const monacoEditorPlugin = (monacoEditorPluginModule as any).default ?? monacoEditorPluginModule
 
 export default defineConfig({
   main: {
@@ -18,9 +16,6 @@ export default defineConfig({
         '@renderer': resolve('src/renderer/src')
       }
     },
-    plugins: [
-      vue(),
-      monacoEditorPlugin({})
-    ]
+    plugins: [vue()]
   }
 })

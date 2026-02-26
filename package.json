@@ -1,12 +1,12 @@
 {
-  "name": "claude-and-view",
+  "name": "Whitespace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "out/main/index.js",
   "build": {
-    "appId": "com.chad.claudeandview",
-    "productName": "Claude and View",
+    "appId": "com.chad.whitespace",
+    "productName": "Whitespace",
     "mac": {
       "target": "dmg"
     },
@@ -33,7 +33,6 @@
     "electron-vite": "^5.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
-    "vite-plugin-monaco-editor": "^1.1.0",
     "vue-tsc": "^3.1.5"
   }
 }

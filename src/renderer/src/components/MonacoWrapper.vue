@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import * as monaco from 'monaco-editor'
 import { ref, onMounted } from 'vue'
+import '../monaco-workers'
 
 const containerRef = ref<HTMLElement | null>(null)
 let editorInstance: monaco.editor.IStandaloneCodeEditor | null = null
